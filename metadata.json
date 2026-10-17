@@ -1,0 +1,6 @@
+{
+  "name": "RRR Visa Help",
+  "description": "Professional visa consultancy and global immigration processing platform offering eligibility assessment, live status tracking, document checklists, and embassy consultation booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

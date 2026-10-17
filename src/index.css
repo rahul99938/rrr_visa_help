@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Hind Siliguri", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Ensure buttons and inputs wrap nicely on small mobile screens */
+button, input, select, textarea {
+  max-width: 100%;
+}
+
+/* 3D Tactile Buttons for WhatsApp, Telegram, IMO & Actions */
+.btn-3d-whatsapp {
+  background: linear-gradient(180deg, #2ae275 0%, #22c55e 50%, #15803d 100%);
+  border-bottom: 4px solid #14532d;
+  border-right: 1px solid #166534;
+  box-shadow: 0 5px 0 #14532d, 0 10px 18px rgba(34, 197, 94, 0.4);
+  color: #ffffff;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-whatsapp:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 0 #14532d, 0 12px 22px rgba(34, 197, 94, 0.5);
+}
+.btn-3d-whatsapp:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 0 #14532d, 0 4px 8px rgba(34, 197, 94, 0.3);
+}
+
+.btn-3d-telegram {
+  background: linear-gradient(180deg, #38bdf8 0%, #0284c7 50%, #0369a1 100%);
+  border-bottom: 4px solid #075985;
+  border-right: 1px solid #0c4a6e;
+  box-shadow: 0 5px 0 #075985, 0 10px 18px rgba(14, 165, 233, 0.4);
+  color: #ffffff;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-telegram:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 0 #075985, 0 12px 22px rgba(14, 165, 233, 0.5);
+}
+.btn-3d-telegram:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 0 #075985, 0 4px 8px rgba(14, 165, 233, 0.3);
+}
+
+.btn-3d-imo {
+  background: linear-gradient(180deg, #60a5fa 0%, #2563eb 50%, #1d4ed8 100%);
+  border-bottom: 4px solid #1e3a8a;
+  border-right: 1px solid #172554;
+  box-shadow: 0 5px 0 #1e3a8a, 0 10px 18px rgba(37, 99, 235, 0.4);
+  color: #ffffff;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-imo:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 6px 0 #1e3a8a, 0 12px 22px rgba(37, 99, 235, 0.5);
+}
+.btn-3d-imo:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 0 #1e3a8a, 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.btn-3d-navy {
+  background: linear-gradient(180deg, #1e40af 0%, #0f3260 50%, #0a2140 100%);
+  border-bottom: 4px solid #051429;
+  border-right: 1px solid #081d38;
+  box-shadow: 0 5px 0 #051429, 0 10px 18px rgba(15, 50, 96, 0.4);
+  color: #ffffff;
+  transition: all 0.12s ease-in-out;
+}
+.btn-3d-navy:hover {
+  filter: brightness(1.08);
+}
+.btn-3d-navy:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 0 #051429;
+}
