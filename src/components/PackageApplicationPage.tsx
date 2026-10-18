@@ -189,7 +189,7 @@ export const PackageApplicationPage: React.FC<PackageApplicationPageProps> = ({
       recipientPhone: phone.trim(),
       recipientName: fullName.trim(),
       orderId: orderRef,
-      newOrderStatus: 'submitted',
+      orderStatusTitle: 'আবেদনপত্র ও TrxID গৃহীত হয়েছে (যাচাই চলছে)',
       siteName: 'RRR Visa Help',
       sitePhone: paymentNumber,
     });

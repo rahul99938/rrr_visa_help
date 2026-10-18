@@ -149,10 +149,18 @@ export const Navbar: React.FC<NavbarProps> = ({
                 href={`https://wa.me/${cleanPhone}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto flex-1 py-3 px-4 text-center text-xs sm:text-sm font-bold text-white bg-emerald-700 hover:bg-emerald-800 rounded-xl flex items-center justify-center gap-2 transition-colors shadow-xs"
+                className="w-full sm:w-auto flex-1 py-3 px-4 text-center text-xs sm:text-sm font-bold text-white btn-3d-whatsapp rounded-xl flex items-center justify-center gap-2 shadow-md cursor-pointer"
               >
                 <PhoneCall className="w-4 h-4" />
-                <span>{lang === 'bn' ? 'হোয়াটসঅ্যাপ / ইমোতে কথা বলুন' : 'WhatsApp / IMO Support'}</span>
+                <span>{lang === 'bn' ? 'WhatsApp সাপোর্ট' : 'WhatsApp'}</span>
+              </a>
+
+              <a
+                href={`tel:${cleanPhone}`}
+                className="w-full sm:w-auto flex-1 py-3 px-4 text-center text-xs sm:text-sm font-bold text-white btn-3d-imo rounded-xl flex items-center justify-center gap-2 shadow-md cursor-pointer"
+              >
+                <PhoneCall className="w-4 h-4" />
+                <span>{lang === 'bn' ? 'IMO সাপোর্ট' : 'IMO Support'}</span>
               </a>
             </div>
           </div>

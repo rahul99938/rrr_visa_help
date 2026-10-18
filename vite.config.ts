@@ -4,7 +4,8 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
-  return {base: '/rrr_visa_help/',
+  return {
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

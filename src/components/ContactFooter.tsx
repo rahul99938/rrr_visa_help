@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Language } from '../types/visa';
 import { BrandLogo } from './BrandLogo';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Lock, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, Lock, ShieldCheck, MessageSquare } from 'lucide-react';
 
 interface ContactFooterProps {
   lang: Language;
@@ -259,7 +259,7 @@ export const ContactFooter: React.FC<ContactFooterProps> = ({
           </div>
 
           <div className="flex items-center gap-4">
-            <span>{lang === 'bn' ? 'সরকারি লাইসেন্স নং: VL-2024-884' : 'License: VL-2024-884'}</span>
+            <span>{lang === 'bn' ? 'ট্রেড লাইসেন্স নং: TR-2024-884' : 'Trade License: TR-2024-884'}</span>
             <span>·</span>
             <button
               onClick={onOpenAdmin}
